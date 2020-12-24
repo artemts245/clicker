@@ -7,8 +7,11 @@
 
         clicks += 1;
         document.getElementById("demo").innerHTML = clicks;
+    }
+    function Cancellation() {
 
-
+        clicks *= 0;
+		document.getElementById("demo").innerHTML = clicks;
     }
 </script>
 </head>
@@ -17,6 +20,7 @@
 <p>Click the button to trigger a function.</p>
 
 <button onclick="myFunction()">Click me</button>
+<button onclick="Cancellation()">Cancellation</button>
 
 <p id="demo"></p>
 
